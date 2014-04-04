@@ -62,4 +62,37 @@ Irene Gabashvili
 
 To align:
 26. Select all the smaller slanting lines (pressing the Shift key) 
-    Modify > Align > Distribute Widths
+    Modify > Align > Distribute Widths -- to make them equi-distant from one another
+27. Select all the horizontal and slanting lines that form the railway track.
+    Convert it to a Graphic symbol named “Railway Track”
+
+
+
+28. Make a new layer, make it top-most and call it train.  
+    This should be the top-most layer so that it appears right in front.
+    Draw a train, use modify > transform -rotate 90 for spikes
+
+29. Select the wheel and spokes and convert it to a graphic symbol named “wheel”.
+
+To make the wheel into a movie clip:
+
+30. Select the “wheel” symbol on the stage (which is an instance of the "wheel" graphic symbol)
+    Convert it to "movie clip" symbol named wheel animation (not “graphic”).
+
+The Timeline, Frames and Keyframes
+
+The timeline consists from many layers and many frames within each layer - displayed as a grid 
+The first frames of all the layers are keyframes and are indicated by a gray background and black dot. 
+The remaining frames are all blank.
+
+To animate the wheel in the "wheel animation" movie clip, create new keyframes within the movie clip's timeline.
+
+31. Double click the wheel on the stage - this will make other stage elements fade and the movie clip symbol name 
+    “wheel animation” appear next to “Scene 1”.
+    (click on “Scene 1” to go back to the main stage area, if needed)
+
+32. Click on the 5th frame in the timeline of the movie clip "wheel animation" (gray square) 
+33. Insert a key frame (right click + “Insert Key Frame”)
+    Modify > Transform > Rotate 90 degrees CCW (counter clock wise)
+34. Insert another key frame at the 10th,15th and 20th frames rotating each time.
+    Take a look at the wheel animation: Control > Test Movie 
