@@ -59,3 +59,7 @@ Irene Gabashvili
 25. Copy and paste to fill in lines across the railway tracks
     To avoid dragging the lines from the center of the picture, "Paste in palce"- Ctrl-shift-V vx Ctrl-V
     You can select copy and paste multiple lines by pressing the shift key while selecting
+
+To align:
+26. Select all the smaller slanting lines (pressing the Shift key) 
+    Modify > Align > Distribute Widths
