@@ -5,7 +5,20 @@ function quickSort (array:Array):Array
  
     var pivot:Number = array[Math.round(array.length / 2)];
  
-    return quickSort(array.filter(function (x:Number, index:int, array:Array):Boolean { return x <  pivot; })).concat(
-            array.filter(function (x:Number, index:int, array:Array):Boolean { return x == pivot; })).concat(
-        quickSort(array.filter(function (x:Number, index:int, array:Array):Boolean { return x > pivot; })));
+    var less:Array = [];
+    var equal:Array = [];
+    var greater:Array = [];
+ 
+    for each (var x:Number in array) {
+        if (x < pivot)
+            less.push(x);
+        if (x == pivot)
+            equal.push(x);
+        if (x > pivot)
+            greater.push(x);
+    }
+ 
+    return quickSort(less).concat(
+            equal).concat(
+            quickSort(greater));
 }
